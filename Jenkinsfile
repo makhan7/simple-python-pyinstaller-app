@@ -3,7 +3,7 @@ pipeline {
 //execution and that each stage directive must specify its own agent section.
     agent none
     stages {
-        stage('Build') {
+        stage('Build-via-python') {
             agent {
                 docker {
                     //This image parameter (of the agent section’s docker parameter) downloads the python:2-alpine
